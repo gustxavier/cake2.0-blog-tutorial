@@ -13,4 +13,11 @@ class Post extends AppModel
             'rule' => 'notBlank',
         ),
     );
+
+	public $belongsTo = array(
+        'User' => array(
+            'className' => 'User',
+            'foreignKey' => 'user_id'
+        )
+    );
 }

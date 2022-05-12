@@ -1,5 +1,10 @@
 <h1>Blog posts</h1>
-<p><?php echo $this->Html->link('Users', '/users', array('action' => 'index')); ?></p>
+<ul>
+  <li><?php echo $this->Html->link('Users', '/users', array('action' => 'index')); ?></li>
+  <li><?php echo $this->Html->link('Categories', '/categories', array('action' => 'index')); ?></li>
+  <li><?php echo $this->Html->link('Tags', '/tags', array('action' => 'index')); ?></li>
+</ul>
+<br />
 <hr />
 <br />
 <p><?php echo $this->Html->link('Add Post', array('action' => 'add')); ?></p>

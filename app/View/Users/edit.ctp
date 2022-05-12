@@ -5,6 +5,7 @@
 echo $this->Form->create('User');
 echo $this->Form->input('id', array('type' => 'hidden'));
 echo $this->Form->input('full_name');
-echo $this->Form->input('email');
+echo $this->Form->input('email', array('type' => 'email'));
+
 echo $this->Form->end('Save User');
 ?>

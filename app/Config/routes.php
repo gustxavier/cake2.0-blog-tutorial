@@ -31,9 +31,17 @@
  */
   Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
 	/**
- * ...and connect the rest of 'Pages' controller's URLs.
+ * ...and connect the rest of 'Users' controller's URLs.
  */
   Router::connect('/users', array('controller' => 'users', 'action' => 'index'));
+		/**
+ * ...and connect the rest of 'Tags' controller's URLs.
+ */
+Router::connect('/tags', array('controller' => 'tags', 'action' => 'index'));
+		/**
+ * ...and connect the rest of 'Tags' controller's URLs.
+ */
+Router::connect('/categories', array('controller' => 'categories', 'action' => 'index'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
